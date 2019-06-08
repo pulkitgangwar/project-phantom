@@ -1,0 +1,200 @@
+// for all
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// variables
+$hovercolor: #e7746f;
+$textcolor: #676d79;
+$fontfamily: "Source Sans Pro", Arial, sans-serif;
+// variables
+
+// css starting here
+
+// section 1 starts here
+// for normal android phones not for tablets
+.imagesize {
+  height: 35px;
+  width: 35px;
+}
+.container1 {
+  padding-top: 40px;
+  width: 90%;
+  margin: 25px auto;
+}
+.main-heading {
+  padding-bottom: 30px;
+}
+.main-heading span a {
+  position: absolute;
+  padding: 7px;
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: $fontfamily;
+  text-transform: uppercase;
+  color: $textcolor;
+  letter-spacing: 6px;
+}
+.main-heading span a:hover {
+  color: $hovercolor;
+  transition: 500ms ease;
+}
+.main-para {
+  padding-bottom: 25px;
+}
+.main-para h1 {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: $fontfamily;
+  color: $textcolor;
+  font-weight: 700;
+}
+.main-para h1 a {
+  font-size: 25px;
+  line-height: 35px;
+  font-family: $fontfamily;
+  color: $textcolor;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px dotted $textcolor;
+}
+.main-para h1 a:hover {
+  color: $hovercolor;
+  border-bottom: 1px dotted $hovercolor;
+  transition: all 500ms ease;
+}
+.main-para2 p {
+  font-family: $fontfamily;
+  line-height: 29px;
+  color: $textcolor;
+  padding-bottom: 25px;
+}
+// end
+// media query for section 1 starts here
+// for ipad and ipad pro
+// start
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-para h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .main-para h1 a {
+    font-size: 40px;
+  }
+}
+// end
+
+// for laptops only
+// start
+@media only screen and (min-width: 1025px) {
+  .container1 {
+    width: 80%;
+  }
+  .main-para h1 {
+    font-size: 43px;
+    line-height: 60px;
+  }
+  .main-para h1 a {
+    font-size: 43px;
+  }
+}
+// end
+
+// section 2 starts here
+
+.container2 {
+  width: 90%;
+  margin: 20px auto;
+  padding-top: 55px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.box {
+  // background-color:red;
+  width: 100%;
+  height: 280px;
+  margin-top: 25px;
+  border-radius: 8px;
+  transition: 500ms ease;
+}
+.box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.overlay1 {
+  background-color: rgba(242, 132, 158, 0.5);
+
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+}
+.box:hover .overlay1 {
+  display: none;
+  transition: 500ms ease;
+}
+// images begin here
+#Image1 {
+  background-image: url("../Images/block1.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image2 {
+  background-image: url("../Images/block2.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image3 {
+  background-image: url("../Images/block3.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image4 {
+  background-image: url("../Images/block4.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image5 {
+  background-image: url("../Images/block5.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image6 {
+  background-image: url("../Images/block6.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image7 {
+  background-image: url("../Images/block7.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image8 {
+  background-image: url("../Images/block8.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image9 {
+  background-image: url("../Images/block9.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image10 {
+  background-image: url("../Images/block10.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image11 {
+  background-image: url("../Images/block11.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#Image12 {
+  background-image: url("../Images/block12.jpg");
+  background-size: cover;
+  background-position: center center;
+}
