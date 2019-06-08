@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.size-control {
+  height: 35px;
+  width: 35px;
+}
+
+.container1 {
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-heading {
+  padding-bottom: 35px;
+}
+
+.main-heading span a {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-size: 15px;
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #676d79;
+  letter-spacing: 8px;
+  font-weight: 800;
+}
+
+.main-heading span a:hover {
+  color: #e7746f;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.main-work {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  padding-bottom: 35px;
+}
+
+.main-work h1 {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #676d79;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 35px;
+}
+
+.main-work h1 a {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 800;
+  color: #676d79;
+  text-decoration: none;
+  border-bottom: 1px dotted grey;
+  text-transform: uppercase;
+}
+
+.main-work h1 a:hover {
+  color: #e7746f;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.main-work2 {
+  padding-bottom: 25px;
+}
+
+.main-work2 p {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #676d79;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .container1 {
+    padding-top: 95px;
+    padding-left: 200px;
+    padding-right: 90px;
+  }
+  .main-work {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    padding-right: 200px;
+  }
+  .main-work h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .main-work h1 a {
+    font-size: 35px;
+  }
+  .main-work2 {
+    padding-right: 200px;
+  }
+}
+
+.containerF {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.form-heading {
+  padding: 15px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #676d79;
+  letter-spacing: 5px;
+}
+
+.icons {
+  padding: 15px;
+  line-height: 70px;
+}
+
+.icons i {
+  border: 1px solid #676d79;
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.icons i:hover {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  color: #e7746f;
+  border: 1px solid #e7746f;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,144 @@
+// for all
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+// for all
+
+// variables
+$hovercolor: #e7746f;
+$textcolor: #676d79;
+$fontfamily: "Source Sans Pro", Arial, sans-serif;
+// variables
+
+// css starting here
+
+// section 1 starts here
+// sizecontrol class for svg
+.size-control {
+  height: 35px;
+  width: 35px;
+}
+// main section class
+.container1 {
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+// main-heading class starts here
+.main-heading {
+  padding-bottom: 35px;
+}
+.main-heading span a {
+  font-family: $fontfamily;
+  font-size: 15px;
+  position: absolute;
+  padding-left: 10px;
+  padding-top: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $textcolor;
+  letter-spacing: 8px;
+  font-weight: 800;
+}
+// hovereffect
+.main-heading span a:hover {
+  color: $hovercolor;
+  transition: 500ms ease;
+}
+// mainwork class starts here
+.main-work {
+  font-family: $fontfamily;
+  padding-bottom: 35px;
+}
+.main-work h1 {
+  font-family: $fontfamily;
+  color: $textcolor;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 35px;
+}
+.main-work h1 a {
+  font-family: $fontfamily;
+  text-transform: capitalize;
+  font-size: 25px;
+  font-weight: 800;
+  color: $textcolor;
+  text-decoration: none;
+  border-bottom: 1px dotted grey;
+  text-transform: uppercase;
+}
+// hover effect
+.main-work h1 a:hover {
+  color: $hovercolor;
+  transition: 500ms ease;
+}
+.main-work2 {
+  padding-bottom: 25px;
+}
+.main-work2 p {
+  font-family: $fontfamily;
+  color: $textcolor;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 28px;
+}
+// media quiry starts here
+// for section 1
+@media only screen and (min-width: 1200px) {
+  .container1 {
+    padding-top: 95px;
+    padding-left: 200px;
+    padding-right: 90px;
+  }
+
+  .main-work {
+    font-family: $fontfamily;
+    padding-right: 200px;
+  }
+  .main-work h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+  .main-work h1 a {
+    font-size: 35px;
+  }
+  .main-work2 {
+    padding-right: 200px;
+  }
+}
+// media quiry ends here
+// footer starts here
+.containerF {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.form-heading{
+  padding:15px;
+  font-family: $fontfamily;
+  text-transform: uppercase;
+  font-weight: 600;
+  color:$textcolor;
+  letter-spacing:5px;
+}
+.icons {
+  padding:15px;
+  line-height:70px;
+
+}
+.icons i {
+  border: 1px solid $textcolor;
+  
+  padding: 18px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.icons i:hover {
+  transition: all 500ms ease;
+  color: $hovercolor;
+  border: 1px solid $hovercolor;
+  cursor: pointer;
+}
