@@ -62,9 +62,9 @@
 
 .main-para h1 a:hover {
   color: #e7746f;
-  border-bottom: 1px dotted #e7746f;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
+  border-bottom: none;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .main-para2 p {
@@ -86,11 +86,12 @@
 
 @media only screen and (min-width: 1025px) {
   .container1 {
-    width: 80%;
+    width: 90%;
   }
   .main-para h1 {
     font-size: 43px;
     line-height: 60px;
+    font-weight: 700;
   }
   .main-para h1 a {
     font-size: 43px;
@@ -120,6 +121,7 @@
   border-radius: 8px;
   -webkit-transition: 500ms ease;
   transition: 500ms ease;
+  position: relative;
 }
 
 .box:hover {
@@ -128,17 +130,40 @@
   cursor: pointer;
 }
 
-.overlay1 {
-  background-color: rgba(242, 132, 158, 0.5);
-  width: 100%;
-  height: 280px;
-  border-radius: 8px;
+.divheading h3 {
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: white;
+  letter-spacing: 6px;
+  font-weight: 700;
+  position: absolute;
+  z-index: 100;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.box:hover .overlay1 {
+.divpara {
   display: none;
-  -webkit-transition: 500ms ease;
-  transition: 500ms ease;
+}
+
+.divpara {
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  line-height: 20px;
+  z-index: 100;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.box:hover .divpara {
+  display: block;
 }
 
 #Image1 {
@@ -147,10 +172,28 @@
   background-position: center center;
 }
 
+.overlay1 {
+  background-color: rgba(242, 132, 158, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image2 {
   background-image: url("../Images/block2.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay2 {
+  background-color: rgba(126, 202, 246, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
 }
 
 #Image3 {
@@ -159,10 +202,28 @@
   background-position: center center;
 }
 
+.overlay3 {
+  background-color: rgba(123, 208, 193, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image4 {
   background-image: url("../Images/block4.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay4 {
+  background-color: rgba(199, 91, 155, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
 }
 
 #Image5 {
@@ -171,10 +232,28 @@
   background-position: center center;
 }
 
+.overlay5 {
+  background-color: rgba(174, 133, 202, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image6 {
   background-image: url("../Images/block6.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay6 {
+  background-color: rgba(132, 153, 231, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
 }
 
 #Image7 {
@@ -183,10 +262,28 @@
   background-position: center center;
 }
 
+.overlay7 {
+  background-color: rgba(126, 202, 246, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image8 {
   background-image: url("../Images/block8.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay8 {
+  background-color: rgba(123, 208, 193, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
 }
 
 #Image9 {
@@ -195,10 +292,28 @@
   background-position: center center;
 }
 
+.overlay9 {
+  background-color: rgba(242, 132, 158, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image10 {
   background-image: url("../Images/block10.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay10 {
+  background-color: rgba(174, 133, 202, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
 }
 
 #Image11 {
@@ -207,9 +322,299 @@
   background-position: center center;
 }
 
+.overlay11 {
+  background-color: rgba(132, 153, 231, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
 #Image12 {
   background-image: url("../Images/block12.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.overlay12 {
+  background-color: rgba(199, 91, 155, 0.5);
+  z-index: 50;
+  width: 100%;
+  height: 280px;
+  border-radius: 8px;
+  position: absolute;
+}
+
+.box:hover .overlay1 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay2 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay3 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay4 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay5 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay6 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay7 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay8 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay9 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay10 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay11 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+.box:hover .overlay12 {
+  display: none;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .box {
+    margin-right: 25px;
+    width: 33%;
+  }
+}
+
+.containerF {
+  background-color: #f6f6f6;
+  padding-top: 25px;
+}
+
+.form-heading {
+  padding: 20px;
+}
+
+.form-heading h2 {
+  font-size: 15px;
+  letter-spacing: 5px;
+  color: #676d79;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.icons {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 40px;
+  line-height: 70px;
+}
+
+.icons i {
+  margin-right: 10px;
+  border: 1px solid #676d79;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 7px;
+}
+
+.icons a {
+  color: black;
+  display: inline-block;
+}
+
+.icons i:hover {
+  color: #e7746f;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+  border: 1px solid #e7746f;
+}
+
+label {
+  position: absolute !important;
+  top: -9999px !important;
+  left: -9999px !important;
+}
+
+.form-edit-2 {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.contact-form-input {
+  padding: 5px;
+}
+
+.contact-form-input input,
+.col100 textarea {
+  width: 100%;
+  margin-top: 35px;
+  border: none;
+  border-bottom: 1px solid #676d79;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-color: #f6f6f6;
+  font-size: 16px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  color: #676d79;
+}
+
+.col50 input:focus,
+.col100 textarea:focus {
+  border-bottom: 2px solid #e7746f;
+}
+
+.formbutton {
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.formbutton input {
+  width: 100%;
+  padding: 15px;
+  background-color: #676d79;
+  outline: none;
+  border: 1px solid #676d79;
+  font-size: 15px;
+  font-family: "Source Sans Pro", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.formbutton input:hover {
+  background-color: #e7746f;
+  border: 1px solid #e7746f;
+  cursor: pointer;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+.copyrightdetails ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+
+.copyrightdetails ul li {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color: #676d79;
+}
+
+.copyrightdetails ul li a {
+  color: #676d79;
+  text-decoration: none;
+  border-bottom: 1px solid #676d79;
+}
+
+.copyrightdetails ul li a:hover {
+  color: #e7746f;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 2000px) {
+  .containerF {
+    width: 90%;
+    margin: auto;
+  }
+  .form-heading h2 {
+    font-size: 22px;
+  }
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  .col50 {
+    width: 50%;
+    float: left;
+    padding-left: 8px;
+  }
+  .col100 {
+    width: 100%;
+  }
+  .flexboxcontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .flex1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .flex2 {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .flex1 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .formbutton {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .formbutton input {
+    width: 15%;
+  }
 }
 /*# sourceMappingURL=style2.css.map */
